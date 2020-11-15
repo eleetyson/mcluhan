@@ -1,0 +1,36 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(220,220,220, 0.2);
+}
+
+.navbar h5 {
+  padding: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  box-shadow: rgba(17, 17, 26, 0.08) 0px 8px 24px, rgba(17, 17, 26, 0.08) 0px 16px 56px, rgba(17, 17, 26, 0.08) 0px 24px 80px;
+}
+
+.form-control:focus {
+  transition: 0.1s ease-in-out;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+button {
+  width: 6rem;
+}
+
+strong {
+  font-weight: 600;
+}
