@@ -28,9 +28,22 @@ textarea {
 }
 
 button {
-  width: 6rem;
+  width: 8rem;
+}
+
+button:focus {
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 strong {
   font-weight: 600;
+}
+
+#error {
+  font-weight: 800;
+}
+
+.hidden {
+  display: none;
 }
