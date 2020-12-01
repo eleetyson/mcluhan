@@ -1,6 +1,6 @@
 const button = document.querySelector("button")
 const error = document.getElementById("error")
-const textarea = document.querySelector("textarea")
+const results = document.querySelector(".results")
 
 window.addEventListener("DOMContentLoaded", () => {
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
@@ -17,17 +17,25 @@ window.addEventListener("DOMContentLoaded", () => {
       recognition.start()
       toggleListenOnStyling()
     }
+
     const stop = () => {
       recognition.stop()
       toggleListenOffStyling()
     }
+
     const onResult = event => {
-      textarea.innerText = ""
+      results.innerText = ''
+
       for (const res of event.results) {
-        const transcription = res[0].transcript
-        textarea.innerText += transcription
+        // const text = document.createTextNode(res[0].transcript)
+        // const p = document.createElement("p")
+        // p.appendChild(text)
+        // results.appendChild(p)
+
+        results.innerText += res[0].transcript
       }
     }
+
     recognition.continuous = true
     recognition.interimResults = true
     recognition.addEventListener("result", onResult)
