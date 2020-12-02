@@ -33,7 +33,8 @@ body {
   width: 23rem;
 }
 
-button:focus {
+button:focus,
+.btn-dark:focus {
   box-shadow: none !important;
   outline: none !important;
 }
