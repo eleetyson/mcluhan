@@ -1,4 +1,4 @@
-const button = document.querySelector(".btn-outline-success")
+const button = document.querySelector(".btn-success")
 const copyBtn = document.querySelector(".btn-dark")
 const error = document.getElementById("error")
 const results = document.querySelector(".results")
@@ -57,12 +57,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function toggleListenOnStyling() {
   button.textContent = "Stop listening"
-  button.classList.remove("btn-outline-success")
-  button.classList.add("btn-outline-danger")
+  button.classList.remove("btn-success")
+  button.classList.add("btn-danger")
 }
 
 function toggleListenOffStyling() {
   button.textContent = "Start listening"
-  button.classList.remove("btn-outline-danger")
-  button.classList.add("btn-outline-success")
+  button.classList.remove("btn-danger")
+  button.classList.add("btn-success")
 }

@@ -28,8 +28,8 @@ body {
   width: 4rem;
 }
 
-.btn-outline-success,
-.btn-outline-danger {
+.btn-success,
+.btn-danger {
   width: 23rem;
 }
 
