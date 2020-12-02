@@ -24,8 +24,13 @@ body {
   color: white;
 }
 
-button {
-  width: 8rem;
+.btn-dark {
+  width: 4rem;
+}
+
+.btn-outline-success,
+.btn-outline-danger {
+  width: 23rem;
 }
 
 button:focus {
