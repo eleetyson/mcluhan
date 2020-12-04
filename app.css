@@ -20,21 +20,51 @@ body {
 .results {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   height: 20rem;
-  background-color: #343a40;
-  color: white;
+  background-color: rgba(220, 220, 220, 0.3);
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
 }
 
-.btn-dark {
+.btn-outline-dark {
   width: 4rem;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
-.btn-success,
+.btn-outline-dark:hover {
+  background-color: rgba(220, 220, 220, 0.5);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-outline-dark:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: rgba(0, 0, 0, 1) !important;
+}
+
+.btn-outline-dark:active:focus {
+  background-color: white !important;
+  border-color: rgba(0, 0, 0, 1) !important;
+}
+
+.btn-outline-success,
 .btn-danger {
   width: 23rem;
+  border-radius: 3px;
 }
 
-button:focus,
-.btn-dark:focus {
+.btn-outline-success {
+  transition: 0.05s ease-in-out;
+}
+
+.btn-outline-success:hover {
+  background-color: rgba(220, 220, 220, 0.3);
+  color: green;
+  border-color: green;
+  font-weight: 400;
+}
+
+button:focus {
   box-shadow: none !important;
   outline: none !important;
 }

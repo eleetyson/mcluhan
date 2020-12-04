@@ -1,5 +1,5 @@
-const button = document.querySelector(".btn-success")
-const copyBtn = document.querySelector(".btn-dark")
+const button = document.querySelector(".btn-outline-success")
+const copyBtn = document.querySelector(".btn-outline-dark")
 const error = document.getElementById("error")
 const results = document.querySelector(".results")
 
@@ -28,11 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
       results.innerText = ''
 
       for (const res of event.results) {
-        // const text = document.createTextNode(res[0].transcript)
-        // const p = document.createElement("p")
-        // p.appendChild(text)
-        // results.appendChild(p)
-
         results.innerText += res[0].transcript
       }
     }
@@ -56,13 +51,13 @@ window.addEventListener("DOMContentLoaded", () => {
 }) // end event listener
 
 function toggleListenOnStyling() {
-  button.textContent = "Stop listening"
-  button.classList.remove("btn-success")
+  button.textContent = "Stop Listening"
+  button.classList.remove("btn-outline-success")
   button.classList.add("btn-danger")
 }
 
 function toggleListenOffStyling() {
-  button.textContent = "Start listening"
+  button.textContent = "Start Listening"
   button.classList.remove("btn-danger")
-  button.classList.add("btn-success")
+  button.classList.add("btn-outline-success")
 }
